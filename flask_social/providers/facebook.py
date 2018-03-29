@@ -29,12 +29,12 @@ config = {
 
 
 def get_api(connection, **kwargs):
-    return facebook.GraphAPI(getattr(connection, 'access_token'))
+    return facebook.GraphAPI(getattr(connection, 'access_token'),version='2.7')
 
 
 def get_provider_user_id(response, **kwargs):
     if response:
-        graph = facebook.GraphAPI(response['access_token'])
+        graph = facebook.GraphAPI(response['access_token'],version='2.7')
         profile = graph.get_object("me")
         return profile['id']
     return None
@@ -48,7 +48,7 @@ def get_connection_values(response, **kwargs):
     except Exception as e:
         print response
         raise e
-    graph = facebook.GraphAPI(access_token)
+    graph = facebook.GraphAPI(access_token,version='2.7')
     profile = graph.get_object("me")
     profile_url = "http://facebook.com/profile.php?id=%s" % profile['id']
     image_url = "http://graph.facebook.com/%s/picture" % profile['id']
