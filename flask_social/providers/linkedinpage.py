@@ -7,7 +7,7 @@ import time
 config = {
     'id': 'linkedinpage',
     'name': 'linkedinpage',
-    # 'install': 'pip install python-linkedin',
+    'install': 'pip install -e git+https://github.com/advoninja/python-linkedin@develop#egg=python-linkedin',
     'module': 'flask_social.providers.linkedinpage',
     'base_url': 'https://api.linkedin.com/',
     'request_token_url': None,
