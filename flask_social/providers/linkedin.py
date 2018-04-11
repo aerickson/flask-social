@@ -7,7 +7,7 @@ import time
 config = {
     'id': 'linkedin',
     'name': 'LinkedIn',
-    'install': 'pip install python-linkedin',
+    # 'install': 'pip install python-linkedin',
     'module': 'flask_social.providers.linkedin',
     'base_url': 'https://api.linkedin.com/',
     'request_token_url': None,
