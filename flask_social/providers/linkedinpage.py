@@ -12,11 +12,7 @@ config = {
     'base_url': 'https://api.linkedin.com/',
     'request_token_url': None,
     'access_token_url': 'https://www.linkedin.com/oauth/v2/accessToken',
-    'authorize_url': 'https://www.linkedin.com/oauth/v2/authorization',
-    'request_token_params': {
-        'scope': 'r_basicprofile r_emailaddress',
-        'state': 'HSSRJKL02318akybgj857'
-    }
+    'authorize_url': 'https://www.linkedin.com/oauth/v2/authorization'
 }
 
 selectors = ('id', 'first-name', 'last-name', 'email-address',
