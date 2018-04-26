@@ -74,6 +74,7 @@ def get_connection_values(response, **kwargs):
         image_url=image_url,
         expires_at=expires_at,
         email=profile.get('emailAddress'),
+        version='V2',
     )
 
 
