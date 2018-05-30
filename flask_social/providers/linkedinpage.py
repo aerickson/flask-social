@@ -60,8 +60,8 @@ def get_connection_values(response, **kwargs):
     api = linkedin.LinkedInApplication(auth)
     profile = api.get_profile(selectors=selectors)
 
-    profile_url = profile['siteStandardProfileRequest']['url']
-    image_url = profile['pictureUrl'] if 'pictureUrl' in profile else '' 
+    profile_url = profile['site-standard-profile-request']['url']
+    image_url = profile['picture-url'] if 'pictureUrl' in profile else '' 
 
     return dict(
         provider_id=config['id'],
