@@ -61,7 +61,7 @@ def get_connection_values(response, **kwargs):
     profile = api.get_profile(selectors=selectors)
 
     # profile_url = profile['site-standard-profile-request']['url']
-    image_url = profile['picture-url'] if 'pictureUrl' in profile else ''
+    # image_url = profile['picture-url'] if 'pictureUrl' in profile else ''
 
     return dict(
         provider_id=config['id'],
