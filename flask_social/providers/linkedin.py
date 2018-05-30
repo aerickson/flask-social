@@ -14,7 +14,8 @@ config = {
     'access_token_url': 'https://www.linkedin.com/oauth/v2/accessToken',
     'authorize_url': 'https://www.linkedin.com/oauth/v2/authorization',
     'request_token_params': {
-        'scope': 'r_emailaddress r_fullprofile w_share rw_organization',
+        #'scope': 'r_emailaddress r_fullprofile w_share rw_organization',
+        'scope': 'r_emailaddress r_emailaddress',
         'state': 'HSSRJKL02318akybgj857'
     }
 }
