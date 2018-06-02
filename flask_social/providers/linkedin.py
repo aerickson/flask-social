@@ -83,7 +83,7 @@ def get_connection_values(response, **kwargs):
     )
 
 
-def get_token_pair_from_reponse(response):
+def get_token_pair_from_response(response):
     return dict(
         access_token=response.get('access_token', None),
         secret=None
